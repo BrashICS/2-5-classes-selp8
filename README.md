@@ -1,2 +1,8 @@
-# 4U_2.5-Classes
-Creating a blueprint for an abstract data type that can be cloned.
+# 2.5 - Classes
+
+###### ICS4U - Mr. Brash 🐿️
+
+Abstract Data Types are limiting in the fact that the one you code is the only one you can _use_.
+
+
+
