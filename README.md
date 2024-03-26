@@ -109,7 +109,7 @@ Use [the Stack example below](#the-stack) to see how you can add _functions_ to 
 
 - In your `Rectangle` Class declaration, add functions to calculate and _return_ the `area` and `perimeter` of the rectangle. Also, add the function `is_square` that returns `true` if the rectangle is, in fact, a square and `false` otherwise. Remember to use `this` when necessary.
 
-### Examples:
+#### Creating Circles and Rectangles:
 ```JS
 let pizza = new Circle();
 pizza.name = "Medium Pizza";
@@ -123,16 +123,18 @@ square.width = 123;
 console.log(square.is_square());
 ```
 
+<br><br>
 
----
-
-
-### More Examples:
+## More Examples:
 
 - [The Lesson](#lesson)
 - [Your Task](#your-task)
+- [A Car](#a-car)
+- [The Stack](#the-stack)
+- [Playing Cards](#playing-cards)
 
 
+### A Car
 Here's an example class that represents a simple car
 ```JS
 class Car {
@@ -204,4 +206,47 @@ class Stack {
     return this.contents.length == 0;
   }
 }
+```
+
+### Playing Cards
+
+Considering a deck of cards is a `Stack` (unless we break it up or look at the bottom) we can use the Stack object for a deck of cards. We can also make a `PlayingCard` class for each card to go in the deck!
+
+```JS
+// A class for a playing card (for example purposes)
+class PlayingCard {
+  value;
+  suit;
+  is_face = false;
+}
+
+// Create an instance of Stack for our deck of cards
+let deck = new Stack();
+deck.name = "Unshuffled Playing Cards"
+deck.max_length = 52;  // Assuming no jokers
+
+let suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
+let face_cards = ["Jack", "Queen", "King", "Ace"];
+
+// Instantiate the PlayingCards and insert them into the deck
+suits.forEach(suit => {
+  // Numbers 2 to 10
+  for (let x = 2; x < 11; x++) {
+    let c = new PlayingCard();
+    c.suit = suit;
+    c.value = x;
+    deck.push(c);
+  }
+  // Face Cards
+  face_cards.forEach(face => {
+    let c = new PlayingCard();
+    c.suit = suit;
+    c.value = face;
+    c.is_face = true;
+    deck.push(c);
+  });
+});
+
+// What's the top card?
+console.log(deck.peek());  
 ```

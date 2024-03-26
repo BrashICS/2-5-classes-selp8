@@ -4,15 +4,11 @@
  *
  * Classes are BLUEPRINTS of an abstract data type.
  * To create a copy of one (called an instance) we use "new"
- * See the example below AND the README.md file.
- * 
- * 
+ * See the README.md file.
+ *  * 
  * Author:
  */
 
 'use strict';
-
-
-
 
 
