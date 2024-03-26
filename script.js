@@ -16,7 +16,7 @@ class Circle {
     radius = 1;
 
     area(){
-        let a=2*Math.PI*this.radius*this.radius;
+        let a=Math.PI*this.radius*this.radius;
         return a;
     }
     circumference(){
@@ -56,12 +56,7 @@ class Vehicle {
 }
 
 let circle1 = new Circle();
-let rect2 = new Rectangle();
-rect1.name = "Best Rectangle Ever!";
-rect1.length = 10;
-rect1.width = 20;
-rect2.name = "Square"
-rect2.length = 5;
-rect2.width = rect2.length;
-console.log(rect1.is_square());
-console.log(rect2.is_square());
+circle1.name = "Best Rectangle Ever!";
+circle1.radius = 5;
+console.log(circle1.area())
+console.log(circle1.circumference());
