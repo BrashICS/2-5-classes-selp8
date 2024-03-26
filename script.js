@@ -2,12 +2,17 @@
  * ICS4U - Mr. Brash 🐿️
  * 2.5 - Classes
  *
- * A common ADT in programming is a Stack.
- * It is described in the instructions.
- *
+ * Classes are BLUEPRINTS of an abstract data type.
+ * To create a copy of one (called an instance) we use "new"
+ * See the example below AND the README.md file.
+ * 
+ * 
  * Author:
  */
 
 'use strict';
 
-// Here's an example class to represent 
+
+
+
+
