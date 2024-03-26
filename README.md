@@ -98,7 +98,7 @@ rect2.name = "Square"
 rect2.length = 5;
 rect2.width = rect2.length;
 console.log("The area of", rect1.name,"is:", rect1.length * rect1.width);
-console.log("The area of", rect2.name,"is:", rect1.length * rect1.width);
+console.log("The area of", rect2.name,"is:", rect2.length * rect2.width);
 ```
 
 ---
